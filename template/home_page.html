@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{static,'css/style.cc'}}">
+</head>
+<body>
+<!--Prints homepage and subheadings-->
+<h1>Comics</h1>
+<h2>Genres you can find!</h2>
+<h3>Genres</h3>
+<div class = "Separate">
+    <ol>
+        <!--Prints list-->
+        <li>Horror</li>
+        <li>Action</li>
+    </ol>
+</div>
+<div class="Seperate">
+    <ul>
+        <!--Prints list-->
+        <li>Horror Comics</li>
+        <li>Action Comics</li>
+    </ul>
+</div>
+<table>
+  <thead>
+    <tr>
+      <th>Action Stories</th>
+        <th>Authors</th>
+      <th>Horror Stories</th>
+      <th>Authors</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>The Long Halloween</td>
+      <td>Jeph Loeb</td>
+      <td>The Walking Dead</td>
+        <td>Robert Kirkman</td>
+    </tr>
+    <tr>
+      <td>Spider-Man: Life Story</td>
+      <td>Chip Zdarsky</td>
+      <td>The Crow</td>
+     <td>James O'Barr</td>
+    </tr>
+  </tbody>
+</table>
+    <!--Display date from python-->
+    <p>Today is {{date}}</p>
+    <!-- Links to the two other pages-->
+    <a href="/page2.html">Action Comics</a>
+    <a href="/page3.html">Horror Comics</a>
+    <br>
+    <a href="/password_update">Update Password</a>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Action Comics</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+</head>
+<body>
+<!-- Prints the page title and headings-->
+<h1>Action Comics</h1>
+<h2>Books within the Genre</h2>
+<h3>Books</h3>
+<div class = "Separate">
+    <ol>
+        <!--Prints list of Characters-->
+        <li>Superman</li>
+        <li>Batman</li>
+        <li>Spiderman</li>
+         <li>Ironman</li>
+        <li>Conan</li>
+    </ol>
+</div>
+<div class="Seperate">
+    <ul>
+        <!--Prints list Stories for the characters-->
+        <li>The long Halloween</li>
+        <li>All Star Superman</li>
+        <li>Armor Wars</li>
+        <li>Spider-Man: Life Story</li>
+        <li>Conan the Barbarian</li>
+    </ul>
+    <!-- Links to the two other pages-->
+    <a href="/home_page.html">Home Page</a>
+    <a href="/page3.html">Horror Comics</a>
+    <br>
+    <!-- Links to websites about the stories-->
+    <a href="https://www.dc.com/graphic-novels/batman-the-long-halloween-1996/batman-the-long-halloween">Long Halloween</a>
+    <a href="https://www.dc.com/graphic-novels/all-star-superman-2005/all-star-superman">All Star Superman</a>
+    <a href="https://www.marvel.com/comics/events/231/armor_wars">Armor Wars</a>
+    <a href="https://marvel.fandom.com/wiki/Spider-Man:_Life_Story_Vol_1_1#:~:text=A%20special%20high-end%20limited,Man%20from%20beginning%20to%20end%2C">Spiderman:Lifestory</a>
+    <a href="https://marvel.fandom.com/wiki/Conan_the_Barbarian_Vol_1_1">Conan the Barbarian</a>
+</div>
+<br>
+<img src="{{ url_for('static', filename='LongHalloween.jpg') }}" alt="Image Representation">
+<br>
+<br>
+<img src="{{ url_for('static', filename='Superman.jpg') }}" alt="Image Representation">
+   <!--Display date from python-->
+    <p>Today is {{date}}</p>
+</body>
+</html>

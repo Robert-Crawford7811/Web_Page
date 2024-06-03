@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Horror Comics</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+</head>
+<body>
+<h1>Horror Comics</h1>
+<h2>Books within the Genre</h2>
+<h3>Books</h3>
+<div class = "Separate">
+    <ol>
+        <!--Prints list of Characters-->
+        <li>Sandman</li>
+        <li>The Walking Dead</li>
+        <li>Swamp Thing</li>
+         <li>Tales from the Crypt</li>
+        <li>The Crow</li>
+    </ol>
+</div>
+<div class="Seperate">
+    <ul>
+        <!--Prints list Stories for the characters-->
+        <li>Sandman</li>
+        <li>The Walking Dead</li>
+        <li>Swamp Thing</li>
+         <li>Tales from the Crypt</li>
+        <li>The Crow</li>
+    </ul>
+    <!-- Links to the two other pages-->
+    <a href="/home_page.html">Home Page</a>
+    <a href="/page2.html">Action Comics</a>
+    <br>
+    <!-- Links to websites about the stories-->
+    <a href="https://sandman.fandom.com/wiki/The_Sandman">Sandman</a>
+    <a href="https://imagecomics.com/comics/series/the-walking-dead">The Walking Dead</a>
+    <a href="https://www.dc.com/comics/the-swamp-thing-2021/the-swamp-thing-1">Swamp Thing</a>
+    <a href="https://tftc.fandom.com/wiki/Tales_from_the_Crypt_(comics)">Tales From the Crypt</a>
+    <a href="https://thecrow.fandom.com/wiki/The_Crow">The Crow</a>
+</div>
+<br>
+<img src="{{ url_for('static', filename='TWD.jpg') }}" alt="Image Representation">
+<br>
+<br>
+<img src="{{ url_for('static', filename='Sandman.jpg') }}" alt="Image Representation">
+</body>
+ <!--Display date from python-->
+    <p>Today is {{date}}</p>
+</html>
