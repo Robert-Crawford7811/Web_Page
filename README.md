@@ -1,5 +1,5 @@
 # Web_Page
-A website made using the flask extension.
+A website made using the flask extension. Website displays information on authors of different graphic novels and requires user to input a password to access the rest of the website.
 
 # What I learned
 * Use of flask web framework to create webpages
